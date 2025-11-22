@@ -30,9 +30,9 @@ export default function Navbar({ theme, setTheme }) {
           className="text-xl font-bold text-gray-700 dark:text-gray-300 tracking-wide"
         />
 
-        <h3 className="text-xl font-bold text-gray-700 dark:text-gray-300">
-          Frontend Developer
-        </h3>
+      <h3 className="text-xl font-bold text-gray-700 dark:text-gray-300 hidden sm:block">
+  Frontend Developer
+</h3>
 
         <div className="flex gap-2">
           <button onClick={toggleTheme} className="p-2">
