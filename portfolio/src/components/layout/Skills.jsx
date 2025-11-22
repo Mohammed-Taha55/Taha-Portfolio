@@ -1,30 +1,3 @@
-
-// export default function Skills(){
-//   return (
-//     <div className="max-w-4xl mx-auto px-8 py-6 border-b">
-//        <h2 className="font-bold text-2xl tracking-wide underline underline-offset-3 mb-2">
-//         Skills</h2>
-//         <p className="mb-2 font-medium text-zinc-800">Primary</p>
-//         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-// {["React.js","JavaScript","Next.js","TypeScript","TailwindCSS","Redux","ShadCn","Motion","Git"].map((skill) => (
-// <div key={skill} className="bg-gray-100 cursor-pointer shadow-sm text-zinc-700 rounded-xl p-4 text-center hover:shadow-md transition-transform font-semibold hover:scale-105">
-// {skill}
-// </div>
-// ))}
-// </div>
-// <p className="mt-4 mb-2 font-medium text-zinc-800">Secondary</p>
-//   <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
-//     {["Node.js","Express.js","MongoDB","Postman","Vercel"].map((skill)=>(
-//       <div key={skill} className="bg-gray-100 shadow-sm cursor-pointer text-zinc-700 p-4 text-center hover:shadow-md transition-transform font-semibold rounded-xl">
-//         {skill}
-//       </div>
-//     ))}
-//   </div>
-//     </div>
-//   )
-// }
-
-
 import {
   SiReact,
   SiJavascript,
