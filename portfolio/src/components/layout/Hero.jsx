@@ -12,7 +12,7 @@ export default function Hero(){
                  focused on building clean, intuitive, 
                 and <span className="text-foreground underline underline-offset-2 font-semibold">engaging digital experiences</span>. Dedicated to writing clean, 
              {" "} <span className="text-foreground underline underline-offset-2 font-semibold">efficient code</span> {" "}
-             and turning complex ideas into simple, visually appealing interfaces, smooth interactions, and 
+             and turning complex ideas into simple and 
                {" "} <span className="text-foreground underline underline-offset-2 font-semibold"> polished execution.</span></p>
              </div>
              
