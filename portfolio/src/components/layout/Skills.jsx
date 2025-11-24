@@ -47,7 +47,7 @@ export default function Skills() {
         {primary.map((skill) => (
           <div key={skill.name}
             className="flex items-center gap-2 bg-gray-100 cursor-pointer shadow-sm text-zinc-700 
-                       rounded-xl p-3 hover:shadow-md transition-transform font-semibold hover:scale-[1.04] dark:bg-zinc-900 dark:text-gray-300 px-6
+                       rounded-xl p-3 hover:shadow-md transition-transform font-semibold hover:scale-[1.04] dark:bg-zinc-900 dark:text-gray-300 
                         dark:hover:bg-zinc-800">
             {skill.icon}
             {skill.name}
@@ -61,7 +61,7 @@ export default function Skills() {
           <div key={skill.name}
             className="flex items-center gap-2 bg-gray-100 cursor-pointer shadow-sm text-zinc-700 
                        rounded-xl p-3 hover:shadow-md transition-transform font-semibold hover:scale-[1.04]
-                        dark:bg-zinc-900 dark:text-gray-300 px-6 dark:hover:bg-zinc-800">
+                        dark:bg-zinc-900 dark:text-gray-300  dark:hover:bg-zinc-800">
             {skill.icon}
             {skill.name}
           </div>
