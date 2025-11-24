@@ -40,26 +40,28 @@ export default function Skills() {
 
   return (
     <div className="max-w-4xl mx-auto px-8 py-8 border-b dark:border-gray-300">
-      <h2 className="font-bold text-2xl tracking-wide underline underline-offset-4 mb-4">Skills</h2>
+      <h2 className="font-bold text-2xl tracking-wider underline underline-offset-4 mb-4 dark:text-gray-300 text-zinc-700">Skills</h2>
 
-      <p className="mb-2 font-medium text-zinc-800 dark:text-gray-300">Primary</p>
+      <p className="mb-2 font-medium text-zinc-800 dark:text-gray-400">Primary</p>
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
         {primary.map((skill) => (
           <div key={skill.name}
             className="flex items-center gap-2 bg-gray-100 cursor-pointer shadow-sm text-zinc-700 
-                       rounded-xl p-3 hover:shadow-md transition-transform font-semibold hover:scale-[1.04] dark:bg-zinc-900 dark:text-gray-300">
+                       rounded-xl p-3 hover:shadow-md transition-transform font-semibold hover:scale-[1.04] dark:bg-zinc-900 dark:text-gray-300 px-6
+                        dark:hover:bg-zinc-800">
             {skill.icon}
             {skill.name}
           </div>
         ))}
       </div>
 
-      <p className="mt-6 mb-2 font-medium text-zinc-800 dark:text-gray-300">Secondary</p>
+      <p className="mt-6 mb-2 font-medium text-zinc-800 dark:text-gray-400">Secondary</p>
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
         {secondary.map((skill) => (
           <div key={skill.name}
             className="flex items-center gap-2 bg-gray-100 cursor-pointer shadow-sm text-zinc-700 
-                       rounded-xl p-3 hover:shadow-md transition-transform font-semibold hover:scale-[1.04] dark:bg-zinc-900 dark:text-gray-300">
+                       rounded-xl p-3 hover:shadow-md transition-transform font-semibold hover:scale-[1.04]
+                        dark:bg-zinc-900 dark:text-gray-300 px-6 dark:hover:bg-zinc-800">
             {skill.icon}
             {skill.name}
           </div>

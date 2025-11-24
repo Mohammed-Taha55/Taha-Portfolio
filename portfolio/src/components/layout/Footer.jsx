@@ -7,14 +7,14 @@ export default function Footer() {
         sm:flex-row sm:justify-between sm:items-center
       "
     >
-      <h3 className="text-lg sm:text-xl text-zinc-700 font-semibold dark:text-gray-400 text-center sm:text-left">
+      <h3 className="text-lg sm:text-xl text-zinc-700 font-semibold dark:text-gray-400 text-center tracking-wider sm:text-left">
         Designed and Coded by{" "}
-        <span className="underline underline-offset-2 font-bold text-zinc-800 dark:text-gray-200">
+        <span className="underline underline-offset-2 font-bold text-zinc-700 tracking-wide dark:text-gray-300">
           Taha
         </span>
       </h3>
 
-      <h3 className="text-zinc-900 dark:text-gray-300 font-medium text-center sm:text-right">
+      <h3 className="text-zinc-700 dark:text-gray-300 font-medium text-center sm:text-right tracking-wide ">
         2025
       </h3>
     </div>
