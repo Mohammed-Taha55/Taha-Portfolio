@@ -14,10 +14,7 @@ import {
   SiVercel
 } from "react-icons/si";
 
- // correct Postman icon
-
 export default function Skills() {
-
   const primary = [
     { name: "React.js", icon: <SiReact size={22} className="text-[#61DAFB]" /> },
     { name: "JavaScript", icon: <SiJavascript size={22} className="text-[#F7DF1E]" /> },
@@ -34,34 +31,47 @@ export default function Skills() {
     { name: "Node.js", icon: <SiNodedotjs size={22} className="text-[#8CC84B]" /> },
     { name: "Express.js", icon: <SiExpress size={22} /> },
     { name: "MongoDB", icon: <SiMongodb size={22} className="text-[#47A248]" /> },
-
     { name: "Vercel", icon: <SiVercel size={22} /> },
   ];
 
   return (
-    <div className="max-w-4xl mx-auto px-8 py-8 border-b dark:border-gray-300">
-      <h2 className="font-bold text-2xl tracking-wider underline underline-offset-4 mb-4 dark:text-gray-300 text-zinc-700">Skills</h2>
+    <div className="max-w-4xl mx-auto px-8 py-6 border-b dark:border-gray-300 border-l border-r bg-gray-100 dark:bg-black">
+      <h2 className="font-semibold text-xl tracking-wide underline underline-offset-4 mb-4 dark:text-gray-300 text-zinc-700 font-poppins">
+        Skills
+      </h2>
 
-      <p className="mb-2 font-medium text-zinc-800 dark:text-gray-400">Primary</p>
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+      <p className="mb-2 font-medium text-zinc-800 dark:text-gray-400 font-robotomono">
+        Primary
+      </p>
+
+      
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
         {primary.map((skill) => (
-          <div key={skill.name}
+          <div
+            key={skill.name}
             className="flex items-center gap-2 bg-gray-100 cursor-pointer shadow-sm text-zinc-700 
-                       rounded-xl p-3 hover:shadow-md transition-transform font-semibold hover:scale-[1.04] dark:bg-zinc-900 dark:text-gray-300 
-                        dark:hover:bg-zinc-800">
+            rounded-xl p-3 hover:shadow-md transition-transform text-sm hover:scale-[1.04] 
+            dark:bg-zinc-900 dark:text-gray-300 dark:hover:bg-zinc-800 font-robotomono"
+          >
             {skill.icon}
             {skill.name}
           </div>
         ))}
       </div>
 
-      <p className="mt-6 mb-2 font-medium text-zinc-800 dark:text-gray-400">Secondary</p>
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
+      <p className="mt-6 mb-2 font-medium text-zinc-800 dark:text-gray-400 font-robotomono">
+        Secondary
+      </p>
+
+      
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-4">
         {secondary.map((skill) => (
-          <div key={skill.name}
+          <div
+            key={skill.name}
             className="flex items-center gap-2 bg-gray-100 cursor-pointer shadow-sm text-zinc-700 
-                       rounded-xl p-3 hover:shadow-md transition-transform font-semibold hover:scale-[1.04]
-                        dark:bg-zinc-900 dark:text-gray-300  dark:hover:bg-zinc-800">
+            rounded-xl p-3 hover:shadow-md transition-transform hover:scale-[1.04]
+            dark:bg-zinc-900 dark:text-gray-300 dark:hover:bg-zinc-800 font-robotomono text-sm"
+          >
             {skill.icon}
             {skill.name}
           </div>
@@ -70,4 +80,3 @@ export default function Skills() {
     </div>
   );
 }
-

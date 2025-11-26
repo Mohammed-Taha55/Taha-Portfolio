@@ -7,6 +7,8 @@
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
+  --font-poppins: "Poppins", sans-serif;
+  --font-robotomono: "Roboto Mono", monospace;
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);

@@ -23,7 +23,7 @@ export default function App() {
   }, [theme]);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
+    <div className="min-h-screen dark:bg-black text-black dark:text-white">
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero />
       <Skills />

@@ -14,23 +14,23 @@ export default function Navbar({ theme, setTheme }) {
     <header
       className="
         fixed top-0 left-0 right-0 z-50 
-        bg-white dark:bg-black 
-        backdrop-blur-lg 
-        border-b border-gray-300 dark:border-gray-300
+        bg-gray-100/30 dark:bg-black/20
+        backdrop-blur-xl border-l border-r 
+        border-b max-w-4xl mx-auto border-gray-300 dark:border-gray-300
       "
     >
       <div className="max-w-4xl mx-auto px-8 py-3 flex items-center justify-between">
         
-        {/* Animated Name */}
+       
         <TextAnimation
-          texts={["Taha", "Mohammed"]}
+          texts={["TAHA", "MOHAMMED"]}
           interval={3000}
           typingSpeed={80}
-          className="text-xl font-bold text-gray-700 dark:text-gray-300 tracking-wide"
+          className="text-xl font-semibold text-gray-700 dark:text-gray-300 tracking-wider font-poppins"
         />
 
-      <h3 className="text-xl font-bold text-gray-700 dark:text-gray-300 hidden sm:block">
-  Frontend Developer
+      <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-300 hidden sm:block tracking-wide font-poppins">
+  FRONTEND DEVELOPER
 </h3>
 
         <div className="flex gap-2">

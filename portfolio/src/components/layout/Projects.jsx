@@ -1,20 +1,23 @@
 import Github from "../../assets/github.svg"
+import Netflix from "../../assets/netflix.svg"
+import Saas from "../../assets/saas.png"
+import Agency from "../../assets/agency.png"
 export default function Projects(){
     return(
- <div className="px-8 py-8 max-w-4xl mx-auto border-b dark:border-gray-300">
- <h2 className="font-bold text-2xl tracking-wide text-zinc-700 mb-4 underline underline-offset-3 dark:text-gray-300">Projects</h2>
+ <div className="px-8 py-6 pb-8 max-w-4xl mx-auto border-b dark:border-gray-300 border-r border-l bg-gray-100 dark:bg-black ">
+ <h2 className="font-semibold text-xl tracking-wide text-zinc-700 mb-4 underline underline-offset-3 dark:text-gray-300 font-poppins">Projects</h2>
 
  <div className="grid sm:grid-cols-2 gap-8 cursor-pointer ">
      <div className="bg-gray-100 p-5 rounded-2xl shadow-sm hover:shadow-lg hover:scale-105 transition dark:bg-zinc-900 dark:hover:bg-zinc-800">
       <img src="https://img.icons8.com/?size=512&id=hp54uGDlrEZB&format=png" alt="Dev Tinder"
       className="w-full object-contain h-36 rounded-lg mb-4 hover:scale-110 transition-transform"/>
-       <h4 className="text-xl font-semibold mb-1 text-zinc-700 dark:text-gray-300 tracking-wider">Dev Tinder</h4>
-       <p className="text-xs tracking-widest text-zinc-600 mb-2 dark:text-gray-300">A developer networking platform to connect coders with similar interests.</p>
+       <h4 className="text-xl mb-1 text-zinc-800 dark:text-white tracking-wider font-poppins font-medium">Dev Tinder</h4>
+       <p className="text-xs tracking-wide text-zinc-600 mb-2 dark:text-gray-400 font-robotomono">Designed a developer networking platform enabling users to connect through shared interests, explore profiles, and interact smoothly through streamlined features focused on collaboration.</p>
        <div className="flex justify-between">
            <a href="https://share.google/0hNLvxlcxzf1zZILV"
             target="_blank"
           rel="noopener noreferrer"
-            className="hover:text-zinc-600 font-semibold">
+            className="hover:text-black text-zinc-700 hover:underline font-semibold dark:text-gray-300 dark:hover:underline underline-offset-2 transition dark:hover:text-white">
                 Explore →</a>
            <a href="https://github.com/Mohammed-Taha55/DevTinder-frontend.git"  
            target="_blank"
@@ -25,11 +28,11 @@ export default function Projects(){
      </div>
 
 
-      <div className="bg-gray-100 p-5 rounded-2xl shadow-sm hover:shadow-lg hover:scale-105 transition dark:bg-zinc-900 dark:hover:bg-zinc-800">
-      <img src="https://yt3.googleusercontent.com/CvgBA1ypUZNxOjiCX0l1V2FbAm7oSDPZE4YkMvkpT_4iLXQ3IXWVtBgWnznHxgtcUoj50TXqZA=s900-c-k-c0x00ffffff-no-rj" alt="Netflix"
-      className="w-full object-contain h-36 rounded-lg mb-4 hover:scale-110 transition-transform"/>
-       <h4 className="text-xl font-semibold mb-1 text-zinc-700 dark:text-gray-300 tracking-wider">Netflix-GPT</h4>
-       <p className="text-xs tracking-widest text-zinc-600 mb-2 dark:text-gray-300">Developed a Netflix clone with GPT-search integration which recommends movies of user interests using OpenAI.</p>
+      {/* <div className="bg-gray-100 p-5 rounded-2xl shadow-sm hover:shadow-lg hover:scale-105 transition dark:bg-zinc-900 dark:hover:bg-zinc-800">
+      <img src={Netflix} alt="Netflix"
+      className="w-full overflow-hidden object-contain h-36 rounded-lg mb-4 hover:scale-110 transition-transform"/>
+       <h4 className="text-xl font-poppins mb-1 text-zinc-700 dark:text-gray-300 tracking-wider">Netflix-GPT</h4>
+       <p className="text-xs tracking-wide text-zinc-600 mb-2 dark:text-gray-300 font-robotomono">Developed a Netflix clone with GPT-search integration which recommends movies of user interests using OpenAI.</p>
        <div className="flex justify-between">
            <a href="https://netflix-gpt-omega-pearl.vercel.app"
              target="_blank"
@@ -42,18 +45,18 @@ export default function Projects(){
             <img src={Github} className="h-5 dark:invert"/>
            </a>
        </div>
-     </div>
+     </div> */}
   
    <div className="bg-gray-100 p-5 rounded-2xl shadow-sm hover:shadow-lg hover:scale-105 transition dark:bg-zinc-900 dark:hover:bg-zinc-800">
       <img src="https://9to5mac.com/wp-content/uploads/sites/6/2023/04/Apple-Weather-app.jpg?quality=82&strip=all&w=1024" alt="Weather"
       className="w-full object-contain h-36 rounded-lg mb-4 hover:scale-110 transition-transform"/>
-       <h4 className="text-xl font-semibold mb-1 text-zinc-700 dark:text-gray-300 tracking-wider">Weather app</h4>
-       <p className="text-xs tracking-widest text-zinc-600 mb-2 dark:text-gray-300">A real time weather app which shows weather details accross the globe, with a custom map showcaing lengend amd air quality</p>
+       <h4 className="text-xl font-poppins mb-1 text-zinc-700 dark:text-white tracking-wider font-medium">Weather app</h4>
+       <p className="text-xs tracking-wide text-zinc-600 mb-2 dark:text-gray-400 font-robotomono">Created a real-time weather application featuring global forecasts, an interactive map, and clear visual indicators for temperature, conditions, and detailed air quality information.</p>
        <div className="flex justify-between">
            <a href="https://weather-app-omega-indol.vercel.app/"
             target="_blank"
           rel="noopener noreferrer"
-            className="hover:text-zinc-600 font-semibold">
+            className="hover:text-black text-zinc-700 hover:underline font-semibold dark:text-gray-300 dark:hover:underline underline-offset-2 transition dark:hover:text-white">
                 Explore →</a>
            <a href="https://github.com/Mohammed-Taha55/Weather-app.git"
             target="_blank"
@@ -64,15 +67,15 @@ export default function Projects(){
      </div>
 
       <div className="bg-gray-100 p-5 rounded-2xl shadow-sm hover:shadow-lg hover:scale-105 transition dark:bg-zinc-900 dark:hover:bg-zinc-800">
-      <img src="https://ik.imagekit.io/5hquntidz/Screenshot%20(15).png?updatedAt=1761211764602" alt="Weather"
+      <img src={Agency} alt="Agency"
       className="w-full object-contain h-36 rounded-lg mb-4 hover:scale-110 transition-transform"/>
-       <h4 className="text-xl font-semibold mb-1 text-zinc-700 dark:text-gray-300 tracking-wider">Agency-website</h4>
-       <p className="text-xs tracking-widest text-zinc-600 mb-2 dark:text-gray-300">A modern, responsive agency website built with React and Tailwind CSS, featuring dark mode, smooth animations, and interactive components to showcase services, work, and team.</p>
+       <h4 className="text-xl font-poppins mb-1 text-zinc-700 dark:text-white font-medium tracking-wider">Agency-website</h4>
+       <p className="text-xs tracking-wide text-zinc-600 mb-2 dark:text-gray-400 font-robotomono">Developed a modern agency website using React and Tailwind CSS with responsive design, smooth animations, and interactive sections to showcase services, projects, and team.</p>
        <div className="flex justify-between">
            <a href="https://agency-website-gray-mu.vercel.app/"
             target="_blank"
           rel="noopener noreferrer"
-            className="hover:text-zinc-600 font-semibold">
+            className="hover:text-black text-zinc-700 hover:underline font-semibold dark:text-gray-300 dark:hover:underline underline-offset-2 transition dark:hover:text-white">
                 Explore →</a>
            <a href="https://github.com/Mohammed-Taha55/Agency-Website.git"
             target="_blank"
@@ -83,16 +86,15 @@ export default function Projects(){
      </div>
    
          <div className="bg-gray-100 p-5 rounded-2xl shadow-sm hover:shadow-lg hover:scale-105 transition dark:bg-zinc-900 dark:hover:bg-zinc-800">
-      <img src="https://i.ibb.co/CpScVKcs/Screenshot-16.png" alt="saas"
-      className="w-full object-contain h-36 rounded-lg mb-4 hover:scale-110 transition-transform"/>
-       <h4 className="text-xl font-semibold mb-1 text-zinc-700 dark:text-gray-300 tracking-wider">Saas-dark-landing-page</h4>
-       <p className="text-xs tracking-widest text-zinc-600 mb-2 dark:text-gray-300"> Built a sleek SaaS landing page featuring custom gradients and smooth motion effects to create a visually engaging and professional user 
-experience.</p>
+      <img src={Saas} alt="saas"
+      className="w-full object-contain h-36 rounded-lg mb-4 hover:scale-110 transition-transform "/>
+       <h4 className="text-xl font-poppins mb-1 text-zinc-700 dark:text-white tracking-wider font-medium">Saas-landing-page</h4>
+       <p className="text-xs tracking--wide text-zinc-600 mb-2 dark:text-gray-400 font-robotomono">Built a polished SaaS landing page with custom gradients, motion effects, and responsive layouts to deliver a visually engaging and professional user experience.</p>
        <div className="flex justify-between">
            <a href="https://saas-dark-landing-page-six.vercel.app/"
             target="_blank"
           rel="noopener noreferrer"
-            className="hover:text-zinc-600 font-semibold">
+            className="hover:text-black text-zinc-700 hover:underline font-semibold dark:text-gray-300 dark:hover:underline underline-offset-2 transition dark:hover:text-white">
                 Explore →</a>
            <a href="https://github.com/Mohammed-Taha55/Saas-dark-landing-page.git"
             target="_blank"
