@@ -1,151 +1,200 @@
-import Github from "../../assets/github.svg"
-import Netflix from "../../assets/netflix.svg"
-import Saas from "../../assets/saas.png"
-import Agency from "../../assets/agency.png"
-import Food from "../../assets/food.png"
-import Eyemax from "../../assets/eyemax.png"
-export default function Projects(){
-    return(
- <div className="px-8 py-6 pb-8 max-w-4xl mx-auto border-b dark:border-gray-300 border-r border-l bg-gray-100 dark:bg-black ">
- <h2 className="font-semibold text-xl tracking-wide text-zinc-700 mb-4 underline underline-offset-3 dark:text-gray-300 font-poppins">Projects</h2>
+import { motion } from "framer-motion";
+import { ExternalLink } from "lucide-react";
+import { SiGithub } from "react-icons/si";
 
- <div className="grid sm:grid-cols-2 gap-8 cursor-pointer ">
-     <div className="bg-gray-100 p-5 rounded-2xl shadow-sm hover:shadow-lg hover:scale-105 transition dark:bg-zinc-900 dark:hover:bg-zinc-800">
-      <img src="https://img.icons8.com/?size=512&id=hp54uGDlrEZB&format=png" alt="Dev Tinder"
-      className="w-full object-contain h-36 rounded-lg mb-4 hover:scale-110 transition-transform"/>
-       <h4 className="text-xl mb-1 text-zinc-800 dark:text-white tracking-wider font-poppins font-medium">Dev Tinder</h4>
-       <p className="text-xs tracking-wide text-zinc-600 mb-2 dark:text-gray-400 font-robotomono">Designed a developer networking platform enabling users to connect through shared interests, explore profiles, and interact smoothly through streamlined features focused on collaboration.</p>
-       <div className="flex justify-between">
-           <a href="https://share.google/0hNLvxlcxzf1zZILV"
-            target="_blank"
-          rel="noopener noreferrer"
-            className="hover:text-black text-zinc-700 hover:underline font-semibold dark:text-gray-300 dark:hover:underline underline-offset-2 transition dark:hover:text-white">
-                Explore →</a>
-           <a href="https://github.com/Mohammed-Taha55/DevTinder-frontend.git"  
-           target="_blank"
-          rel="noopener noreferrer">
-           <img src={Github} className="h-5 dark:invert" />
-           </a>
-       </div>
-     </div>
+import Saas from "../../assets/saas.png";
+import Agency from "../../assets/agency.png";
+import Food from "../../assets/food.png";
+import Eyemax from "../../assets/eyemax.png";
+import Stock from "../../assets/stock.png";
 
+const projects = [
+  {
+    id: "stock radar",
+    title: "Stock sentiment radar",
+    desc: "Stock sentiment radar is a platform that helps you to analyze the sentiment of stocks.",
+    image: Stock,
+    demo: "https://stock-sentiment-radar.vercel.app/",
+    github: "https://github.com/Mohammed-Taha55/Stock_Radar",
+  },
+  {
+    id: "weather",
+    title: "Weather App",
+    desc: "Real-time forecasts with interactive maps, temperature visuals, and air quality indicators.",
+    image: "https://9to5mac.com/wp-content/uploads/sites/6/2023/04/Apple-Weather-app.jpg?quality=82&strip=all&w=1024",
+    demo: "https://weather-app-omega-indol.vercel.app/",
+    github: "https://github.com/Mohammed-Taha55/Weather-app.git",
+  },
+  {
+    id: "agency",
+    title: "Agency Website",
+    desc: "Responsive agency site with smooth scroll animations and interactive service showcases.",
+    image: Agency,
+    demo: "https://agency-website-gray-mu.vercel.app/",
+    github: "https://github.com/Mohammed-Taha55/Agency-Website.git",
+  },
+  {
+    id: "saas",
+    title: "SaaS Landing",
+    desc: "Polished dark-theme SaaS page with custom gradients, parallax, and responsive layouts.",
+    image: Saas,
+    demo: "https://saas-dark-landing-page-six.vercel.app/",
+    github: "https://github.com/Mohammed-Taha55/Saas-dark-landing-page.git",
+  },
+  {
+    id: "food",
+    title: "Food App",
+    desc: "Food ordering frontend with dynamic menus, cart UI, and smooth checkout flow.",
+    image: Food,
+    demo: "https://food-app-55.vercel.app/",
+    github: "https://github.com/Mohammed-Taha55/food-app.git",
+  },
+  {
+    id: "eyemax",
+    title: "Eyemax Optical",
+    desc: "Optical store site with product displays, service details, and clean user experience.",
+    image: Eyemax,
+    demo: "https://eyemax-optical-store.vercel.app/",
+    github: "https://github.com/Mohammed-Taha55/eyemax.git",
+  },
+];
 
-      {/* <div className="bg-gray-100 p-5 rounded-2xl shadow-sm hover:shadow-lg hover:scale-105 transition dark:bg-zinc-900 dark:hover:bg-zinc-800">
-      <img src={Netflix} alt="Netflix"
-      className="w-full overflow-hidden object-contain h-36 rounded-lg mb-4 hover:scale-110 transition-transform"/>
-       <h4 className="text-xl font-poppins mb-1 text-zinc-700 dark:text-gray-300 tracking-wider">Netflix-GPT</h4>
-       <p className="text-xs tracking-wide text-zinc-600 mb-2 dark:text-gray-300 font-robotomono">Developed a Netflix clone with GPT-search integration which recommends movies of user interests using OpenAI.</p>
-       <div className="flex justify-between">
-           <a href="https://netflix-gpt-omega-pearl.vercel.app"
-             target="_blank"
-          rel="noopener noreferrer"
-            className="hover:text-zinc-600 font-semibold">
-                Explore →</a>
-           <a href="https://github.com/Mohammed-Taha55/netflix-gpt.git"
-            target="_blank"
-          rel="noopener noreferrer">
-            <img src={Github} className="h-5 dark:invert"/>
-           </a>
-       </div>
-     </div> */}
-  
-   <div className="bg-gray-100 p-5 rounded-2xl shadow-sm hover:shadow-lg hover:scale-105 transition dark:bg-zinc-900 dark:hover:bg-zinc-800">
-      <img src="https://9to5mac.com/wp-content/uploads/sites/6/2023/04/Apple-Weather-app.jpg?quality=82&strip=all&w=1024" alt="Weather"
-      className="w-full object-contain h-36 rounded-lg mb-4 hover:scale-110 transition-transform"/>
-       <h4 className="text-xl font-poppins mb-1 text-zinc-700 dark:text-white tracking-wider font-medium">Weather app</h4>
-       <p className="text-xs tracking-wide text-zinc-600 mb-2 dark:text-gray-400 font-robotomono">Created a real-time weather application featuring global forecasts, an interactive map, and clear visual indicators for temperature, conditions, and detailed air quality information.</p>
-       <div className="flex justify-between">
-           <a href="https://weather-app-omega-indol.vercel.app/"
-            target="_blank"
-          rel="noopener noreferrer"
-            className="hover:text-black text-zinc-700 hover:underline font-semibold dark:text-gray-300 dark:hover:underline underline-offset-2 transition dark:hover:text-white">
-                Explore →</a>
-           <a href="https://github.com/Mohammed-Taha55/Weather-app.git"
-            target="_blank"
-          rel="noopener noreferrer">
-        <img src={Github} className="h-5 dark:invert"/>
-           </a>
-       </div>
-     </div>
+function Card({ project, index }) {
+  return (
+    <motion.article
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94], delay: index * 0.06 }}
+      className="group relative flex flex-col gap-4"
+    >
+      {/* TV Bezel / Outer Frame */}
+      <div className="relative p-2.5 sm:p-3 rounded-[1.5rem] shadow-xl transition-transform duration-500 
+        bg-neutral-100 dark:bg-neutral-900 
+        border-t border-l-2 border-r-2 border-b-4 
+        border-neutral-300 border-b-neutral-400 
+        dark:border-neutral-800 dark:border-b-black">
 
-      <div className="bg-gray-100 p-5 rounded-2xl shadow-sm hover:shadow-lg hover:scale-105 transition dark:bg-zinc-900 dark:hover:bg-zinc-800">
-      <img src={Agency} alt="Agency"
-      className="w-full object-contain h-36 rounded-lg mb-4 hover:scale-110 transition-transform"/>
-       <h4 className="text-xl font-poppins mb-1 text-zinc-700 dark:text-white font-medium tracking-wider">Agency-website</h4>
-       <p className="text-xs tracking-wide text-zinc-600 mb-2 dark:text-gray-400 font-robotomono">Developed a modern agency website using React and Tailwind CSS with responsive design, smooth animations, and interactive sections to showcase services, projects, and team.</p>
-       <div className="flex justify-between">
-           <a href="https://agency-website-gray-mu.vercel.app/"
-            target="_blank"
-          rel="noopener noreferrer"
-            className="hover:text-black text-zinc-700 hover:underline font-semibold dark:text-gray-300 dark:hover:underline underline-offset-2 transition dark:hover:text-white">
-                Explore →</a>
-           <a href="https://github.com/Mohammed-Taha55/Agency-Website.git"
-            target="_blank"
-          rel="noopener noreferrer">
-           <img src={Github} className="h-5 dark:invert"/>
-           </a>
-       </div>
-     </div>
-   
-         <div className="bg-gray-100 p-5 rounded-2xl shadow-sm hover:shadow-lg hover:scale-105 transition dark:bg-zinc-900 dark:hover:bg-zinc-800">
-      <img src={Saas} alt="saas"
-      className="w-full object-contain h-36 rounded-lg mb-4 hover:scale-110 transition-transform "/>
-       <h4 className="text-xl font-poppins mb-1 text-zinc-700 dark:text-white tracking-wider font-medium">Saas-landing-page</h4>
-       <p className="text-xs tracking--wide text-zinc-600 mb-2 dark:text-gray-400 font-robotomono">Built a polished SaaS landing page with custom gradients, motion effects, and responsive layouts to deliver a visually engaging and professional user experience.</p>
-       <div className="flex justify-between">
-           <a href="https://saas-dark-landing-page-six.vercel.app/"
-            target="_blank"
-          rel="noopener noreferrer"
-            className="hover:text-black text-zinc-700 hover:underline font-semibold dark:text-gray-300 dark:hover:underline underline-offset-2 transition dark:hover:text-white">
-                Explore →</a>
-           <a href="https://github.com/Mohammed-Taha55/Saas-dark-landing-page.git"
-            target="_blank"
-          rel="noopener noreferrer">
-          <img src={Github} className="h-5 dark:invert"/>
-           </a>
-       </div>
-     </div>
+        {/* TV Screen Area */}
+        <div className="relative overflow-hidden rounded-xl aspect-video bg-black shadow-inner">
 
-              <div className="bg-gray-100 p-5 rounded-2xl shadow-sm hover:shadow-lg hover:scale-105 transition dark:bg-zinc-900 dark:hover:bg-zinc-800">
-      <img src={Food} alt="saas"
-      className="w-full object-contain h-36 rounded-lg mb-4 hover:scale-110 transition-transform "/>
-       <h4 className="text-xl font-poppins mb-1 text-zinc-700 dark:text-white tracking-wider font-medium">Food-app</h4>
-       <p className="text-xs tracking--wide text-zinc-600 mb-2 dark:text-gray-400 font-robotomono">A modern responsive food ordering frontend with dynamic menus, product pages, cart UI, and smooth user experience built using Next.js, TypeScript, and TailwindCSS.</p>
-       <div className="flex justify-between">
-           <a href="https://food-app-55.vercel.app/"
-            target="_blank"
-          rel="noopener noreferrer"
-            className="hover:text-black text-zinc-700 hover:underline font-semibold dark:text-gray-300 dark:hover:underline underline-offset-2 transition dark:hover:text-white">
-                Explore →</a>
-           <a href="https://github.com/Mohammed-Taha55/food-app.git"
-            target="_blank"
-          rel="noopener noreferrer">
-          <img src={Github} className="h-5 dark:invert"/>
-           </a>
-       </div>
-     </div>
+          {/* Subtle Screen Glare Effect */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent z-10 pointer-events-none mix-blend-overlay opacity-50 group-hover:opacity-100 transition-opacity duration-700" />
 
-       <div className="bg-gray-100 p-5 rounded-2xl shadow-sm hover:shadow-lg hover:scale-105 transition dark:bg-zinc-900 dark:hover:bg-zinc-800">
-      <img src={Eyemax} alt="saas"
-      className="w-full object-contain h-36 rounded-lg mb-4 hover:scale-110 transition-transform "/>
-       <h4 className="text-xl font-poppins mb-1 text-zinc-700 dark:text-white tracking-wider font-medium">Eyemax-Optical-Store</h4>
-       <p className="text-xs tracking--wide text-zinc-600 mb-2 dark:text-gray-400 font-robotomono">I built a modern website for my brother's optical shop, featuring design, engaging GIFs, product displays, service details, and a user experience.</p>
-       <div className="flex justify-between">
-           <a href="https://eyemax-optical-store.vercel.app/"
-            target="_blank"
-          rel="noopener noreferrer"
-            className="hover:text-black text-zinc-700 hover:underline font-semibold dark:text-gray-300 dark:hover:underline underline-offset-2 transition dark:hover:text-white">
-                Explore →</a>
-           <a href="https://github.com/Mohammed-Taha55/eyemax.git"
-            target="_blank"
-          rel="noopener noreferrer">
-          <img src={Github} className="h-5 dark:invert"/>
-           </a>
-       </div>
-     </div>
+          {/* Project Image */}
+          <img
+            src={project.image}
+            alt={project.title}
+            loading="lazy"
+            className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105 opacity-90 group-hover:opacity-100"
+          />
 
- </div>
- </div>
+          {/* Persistent bottom gradient for readability */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent z-0" />
 
-    )
+          {/* Hover dark overlay with action buttons — Hidden on mobile, visible on sm+ */}
+          <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]
+            opacity-0 group-hover:opacity-100 transition-all duration-300
+            hidden sm:flex items-center justify-center gap-3 z-20">
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-4 py-2 rounded-full
+                bg-white text-neutral-900 text-[12px] font-semibold
+                hover:bg-neutral-100 transition-colors duration-200
+                translate-y-3 group-hover:translate-y-0 transition-transform"
+            >
+              <ExternalLink size={12} />
+              Live Demo
+            </a>
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-4 py-2 rounded-full
+                bg-white/15 backdrop-blur-sm text-white text-[12px] font-semibold
+                border border-white/20 hover:bg-white/25 transition-colors duration-200
+                translate-y-3 group-hover:translate-y-0 transition-transform"
+            >
+              <SiGithub size={12} />
+              Code
+            </a>
+          </div>
+        </div>
+
+        {/* TV Power Light Indicator */}
+        <div className="absolute bottom-1 right-4 w-1.5 h-1.5 rounded-full bg-red-500/50 shadow-[0_0_5px_rgba(239,68,68,0.5)] group-hover:bg-green-500 group-hover:shadow-[0_0_8px_rgba(34,197,94,0.8)] transition-all duration-300" />
+      </div>
+
+      {/* Text content outside the TV */}
+      <div className="px-2">
+        <h3 className="text-[16px] font-display font-semibold tracking-tight mb-1.5
+          text-foreground group-hover:text-blue-500 transition-colors">
+          {project.title}
+        </h3>
+        <p className="text-[13px] leading-relaxed text-neutral-500 dark:text-neutral-400 line-clamp-2">
+          {project.desc}
+        </p>
+
+        {/* Mobile-only explicit action buttons */}
+        <div className="flex sm:hidden items-center gap-2 mt-4 pt-3 border-t border-border">
+          <a
+            href={project.demo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full
+              border border-border dark:bg-neutral-800 text-neutral-900 dark:text-white
+              text-[11px] font-semibold transition-colors duration-200"
+          >
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
+            </span>
+            Live View
+          </a>
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full
+              border border-border text-foreground
+              text-[11px] font-semibold transition-colors duration-200"
+          >
+            <SiGithub size={11} />
+            Code
+          </a>
+        </div>
+      </div>
+    </motion.article>
+  );
+}
+
+export default function Projects() {
+  return (
+    <section id="projects" className="max-w-5xl mx-auto px-5 sm:px-8 py-6 sm:py-12 sm:pt-24">
+      <div className="section-divider mb-10" />
+
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
+        <p className="text-[11px] font-mono tracking-[0.15em] uppercase text-neutral-400 dark:text-neutral-500 mb-3">
+          <span className="inline-block w-4 h-[1px] bg-neutral-300 dark:bg-neutral-700 align-middle mr-2" />
+          Selected Work
+        </p>
+        <h2 className="text-2xl sm:text-3xl font-display font-bold tracking-tight mb-5">
+          Projects
+        </h2>
+      </motion.div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        {projects.map((p, i) => (
+          <Card key={p.id} project={p} index={i} />
+        ))}
+      </div>
+    </section>
+  );
 }

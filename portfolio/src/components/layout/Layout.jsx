@@ -7,18 +7,15 @@ import Contact from "./Contact"
 
 export default function Layout({ children }) {
   return (
-    <div className="min-h-screen flex flex-col bg-white dark:bg-black text-black dark:text-white transition-colors">
-      
+    <div className="aurora-bg min-h-screen flex flex-col text-zinc-900 dark:text-zinc-100 transition-colors duration-500">
       <Navbar />
-
       <main className="flex-1">
         {children}
       </main>
-      <Hero/>
-      <Skills/>
-      <Projects/>
-      <Contact/>
-     
+      <Hero />
+      <Skills />
+      <Projects />
+      <Contact />
       <Footer />
     </div>
   )
