@@ -59,8 +59,8 @@ export default function Navbar({ theme, setTheme }) {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${scrolled
-          ? "bg-white/80 dark:bg-neutral-950/80 backdrop-blur-lg shadow-[0_1px_0_0_var(--border)]"
-          : "bg-transparent"
+        ? "bg-white/80 dark:bg-neutral-950/80 backdrop-blur-lg shadow-[0_1px_0_0_var(--border)]"
+        : "bg-transparent"
         }`}
     >
       <nav className="max-w-5xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
@@ -71,7 +71,7 @@ export default function Navbar({ theme, setTheme }) {
             texts={["Taha", "Mohammed"]}
             interval={3000}
             typingSpeed={80}
-            className="font-display font-medium text-lg tracking-widest text-foreground"
+            className="font-display font-medium text-lg text-primary tracking-wider"
           />
         </a>
 

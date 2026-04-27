@@ -139,7 +139,7 @@
 .dot-bg {
   background-color: var(--background);
   /* Bumped from 0.8px to 1px to fix mobile high-DPI rendering */
-  background-image: radial-gradient(circle, #d3d5da 1px, transparent 1px);
+  background-image: radial-gradient(circle, #d3d5da 0.9px, transparent 1px);
   background-size: 24px 24px;
   background-position: 0 0;
 

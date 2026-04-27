@@ -10,7 +10,7 @@ export default function Footer() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="flex flex-col sm:flex-row items-center justify-between gap-4 text-[12px] text-neutral-400 dark:text-neutral-500"
+        className="flex flex-col sm:flex-row items-center justify-between gap-4 text-[12px] text-neutral-500 dark:text-neutral-500"
       >
         <span className="font-mono text-center sm:text-left">
           &copy; {new Date().getFullYear()} Mohammed Taha

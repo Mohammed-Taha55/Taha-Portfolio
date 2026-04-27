@@ -7,6 +7,7 @@ import Agency from "../../assets/agency.png";
 import Food from "../../assets/food.png";
 import Eyemax from "../../assets/eyemax.png";
 import Stock from "../../assets/stock.png";
+import ChronoTask from "../../assets/chrono.png";
 
 const projects = [
   {
@@ -24,6 +25,14 @@ const projects = [
     image: "https://9to5mac.com/wp-content/uploads/sites/6/2023/04/Apple-Weather-app.jpg?quality=82&strip=all&w=1024",
     demo: "https://weather-app-omega-indol.vercel.app/",
     github: "https://github.com/Mohammed-Taha55/Weather-app.git",
+  },
+  {
+    id: "chrono task",
+    title: "Chrono Task",
+    desc: "Chrono Task is a task management platform that helps you to manage your tasks and deadlines.",
+    image: ChronoTask,
+    demo: "https://chronotasks.vercel.app/",
+    github: "https://github.com/Mohammed-Taha55/ChronoTask.git",
   },
   {
     id: "agency",
