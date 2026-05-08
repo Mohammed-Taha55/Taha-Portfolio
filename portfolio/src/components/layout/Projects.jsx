@@ -8,6 +8,7 @@ import Food from "../../assets/food.png";
 import Eyemax from "../../assets/eyemax.png";
 import Stock from "../../assets/stock.png";
 import ChronoTask from "../../assets/chrono.png";
+import Pokedex from "../../assets/pokedex.png";
 
 const projects = [
   {
@@ -33,6 +34,14 @@ const projects = [
     image: ChronoTask,
     demo: "https://chronotasks.vercel.app/",
     github: "https://github.com/Mohammed-Taha55/ChronoTask.git",
+  },
+  {
+    id: "Pokédex",
+    title: "Pokédex",
+    desc: "Pokédex is a platform for pokemon lovers where users can find favorite pokemon and view their stats by fetching data",
+    image: Pokedex,
+    demo: "https://pokedex-lite-sooty-ten.vercel.app/",
+    github: "https://github.com/Mohammed-Taha55/pokedex-lite",
   },
   {
     id: "agency",
