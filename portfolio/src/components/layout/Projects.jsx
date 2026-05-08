@@ -38,7 +38,7 @@ const projects = [
   {
     id: "Pokédex",
     title: "Pokédex",
-    desc: "Pokédex is a platform for pokemon lovers where users can find favorite pokemon and view their stats by fetching data",
+    desc: "Pokédex is a platform for pokemon lovers where users can find favorite pokemon and view their stats.",
     image: Pokedex,
     demo: "https://pokedex-lite-sooty-ten.vercel.app/",
     github: "https://github.com/Mohammed-Taha55/pokedex-lite",
