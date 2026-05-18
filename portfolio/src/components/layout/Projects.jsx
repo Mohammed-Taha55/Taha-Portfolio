@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { SiGithub } from "react-icons/si";
-
+import veyrox from "../../assets/veyrox.png";
 import Saas from "../../assets/saas.png";
 import Agency from "../../assets/agency.png";
 import Food from "../../assets/food.png";
@@ -27,6 +27,16 @@ const projects = [
     demo: "https://weather-app-omega-indol.vercel.app/",
     github: "https://github.com/Mohammed-Taha55/Weather-app.git",
   },
+
+   {
+    id: "veyrox",
+    title: "AI camera security",
+    desc: "Real-time object detection and alerting for home and commercial security systems with dynamic animations.",
+    image: veyrox,
+    demo: "https://veyrox.vercel.app/",
+    github: "https://github.com/Mohammed-Taha55/Veyrox.git",
+  },
+
   {
     id: "chrono task",
     title: "Chrono Task",
