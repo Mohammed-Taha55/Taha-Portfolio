@@ -24,7 +24,7 @@ export default function Hero() {
         className="text-[11px] sm:text-xs font-medium tracking-[0.15em] uppercase text-neutral-500 dark:text-neutral-500 mb-5"
       >
         <span className="inline-block w-6 h-[1px] bg-neutral-300 dark:bg-neutral-700 align-middle mr-3" />
-        Frontend Developer
+        Frontend Engineer
       </motion.p>
 
       {/* Headline */}
@@ -44,7 +44,7 @@ export default function Hero() {
         className="max-w-md text-[15px] sm:text-base leading-relaxed text-neutral-500 dark:text-neutral-500 mb-10"
       >
         Hi, I&apos;m <strong className="text-foreground font-semibold">Mohammed Taha</strong> — a frontend
-        developer who obsesses over clean code, smooth motion, and building things
+        developer who obsesses over <span className="text-foreground">clean code</span>, smooth motion, and building things
         people actually enjoy using.
       </motion.p>
 
